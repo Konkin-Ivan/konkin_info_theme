@@ -1,0 +1,29 @@
+name: Konkin.info
+description: 'Тема оформления для сайтов информационной тематики (блоги, сайты услуг, сайты-визитки, новости). Для интернет-магазинов использовать тему - <a href="#">Konkin_Store</a>, для сайтов Landing Page использовать тему - <a href="#">Konkin_Landing</a>.'
+screenshot: images/logotheme.png
+logo: logo.svg
+
+# core: 8.x
+type: theme
+base theme: stable9
+# Information added by Drupal.org packaging script on 2016-06-02
+core_version_requirement: ^8 || ^9
+project: 'KonKin'
+datestamp: 1464881364
+
+libraries:
+  - konkin_info/global-css
+  - konkin_info/global-js
+  - core/normalize
+
+regions:
+  header: 'Header'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  title: 'Page Title'
+  content: 'Content'
+  aside: 'Aside'
+  menu: 'Menu'
+  footer: 'Footer'
+  bottom: 'Bottom'

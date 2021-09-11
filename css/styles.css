@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  padding   : 0;
+  margin    : 0;
+}
+@font-face {
+  font-family: 'FontDockerH1';
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-display: swap;
+}
+:root {
+  --theme-bg         : #fff;
+  --color            : #3c4043;
+  --link-color       : #1a73e8;
+  color-scheme       : light;
+}
+
+[data-theme="dark"] {
+  --theme-bg         : #202124;
+  --color            : #e8eaed;
+  --link-color       : #8ab4f8;
+  color-scheme       : dark;
+}
+
+#body {
+  font-family: FontDockerH1;
+}
+
+textarea {
+  padding: 10px;
+}
+
+p {
+  padding  : 15px 5px;
+  font-size: 18px;
+}
+
+h2 {
+  padding: 20px 0;
+}
+
+img {
+  width : 100%;
+  height: auto;
+}
+
+input {
+  font-size: 90%;
+}
+/**
+* Layout
+**/
+.sub-wrapper {
+  background: #ccc;
+  position: absolute;
+  left: -100%;
+}
+.wrapper {
+  background: yellow;
+}
+#block-sitebranding img {
+  width: 75px;
+  height: 75px;
+}
+.container {
+  border: 1px dotted;
+  max-width: 900px;
+  width: 100%;
+}
+.sub-container {
+  border: 1px dotted;
+  max-width: 250px;
+  margin-left: auto;
+}
+
+  /*'light' or 'dark' options */
+  @media (prefers-color-scheme: light) {
+    #body {
+      background : var(--theme-bg);
+      color      : var(--color);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    #body {
+      background : var(--theme-bg);
+      color      : var(--color);
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    body {
+        display: auto;    
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    /**
+    * Layout
+    **/
+    footer, main, header {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .sub-wrapper {
+      flex: 1;
+      position: unset;
+    }
+    .wrapper {
+      flex: 3;
+    }
+  }
